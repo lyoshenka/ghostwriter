@@ -222,6 +222,7 @@ table {
 .post-title,
 .page-title {
   font-size: 52px;
+  line-height: 1.2;
   font-weight: 700;
   margin: 15px 0;
   text-align: center;
