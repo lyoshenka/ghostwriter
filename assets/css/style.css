@@ -12,6 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 33px;
+  color: #222222;
   text-transform: none; }
 
 h1 {
@@ -73,12 +74,24 @@ img {
   width: auto;
   max-width: 100%; }
 
-pre {
-  background: #F1F0EA;
-  border: 1px solid #DDDBCC;
-  border-radius: 3px;
-  margin: 0 0 40px;
-  padding: 15px 20px; }
+pre, code {
+  background: #F1F0EA; }
+  pre {
+    background: #F1F0EA;
+    /*max-height: 600px;*/
+    margin: 0 0 40px;
+    padding: 15px 20px; }
+  code {
+    font-size: 15px;
+    padding: 1px 5px;
+    white-space: pre-wrap;
+    background: #F1F0EA;
+    border: 1px solid #DDDBCC;
+    border-radius: 3px; }
+  pre code {
+    border: none;
+    white-space: inherit;
+    padding: 0; }
 
 hr {
   border: none;
@@ -221,6 +234,7 @@ table {
 
 .post-title,
 .page-title {
+  color: #333;
   font-size: 52px;
   line-height: 1.2;
   font-weight: 700;
