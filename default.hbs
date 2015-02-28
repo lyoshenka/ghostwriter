@@ -22,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/nprogress.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    {{! <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"> }}
+    <link rel="stylesheet" href="{{asset "icons/css/fa-ghostwriter-subset.css"}}">
     <link rel="icon" type="image/png" href="{{asset "img/favicon.png"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
@@ -36,7 +37,7 @@
                 <div class="site-title-wrapper">
                     <h1 class="site-title"><a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a></h1>
 
-                    <a class="button-square" href="{{@blog.url}}/rss"><i class="fa fa-rss"></i></a>
+                    <a class="button-square" href="{{@blog.url}}/rss"><i class="icon-rss"></i></a>
                 </div>
 
                 <ul class="site-nav">
@@ -57,7 +58,7 @@
             <div class="site-title-wrapper">
                 <h1 class="site-title"><a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a></h1>
 
-                <a class="button-square button-jump-top js-jump-top" href="#"><i class="fa fa-angle-up"></i></a>
+                <a class="button-square button-jump-top js-jump-top" href="#"><i class="icon-angle-up"></i></a>
             </div>
 
 	    <p class="footer-copyright">Published with <a href="http://tryghost.org">Ghost</a></p>        
