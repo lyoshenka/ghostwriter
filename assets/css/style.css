@@ -1,6 +1,17 @@
 /* ============================================================ */
 /* Base */
 /* ============================================================ */
+
+/* Fix for jumping scrollbar: https://aykevl.nl/2014/09/fix-jumping-scrollbar */
+
+@media screen and (min-width: 35em) {
+  .scrollbar-jump-fix {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
+
+
 html, body {
   height: 100%; }
 
