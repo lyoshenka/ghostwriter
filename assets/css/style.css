@@ -133,6 +133,10 @@ table {
   color: #000;
   display: block; }
 
+svg {
+  fill:currentColor;
+}
+
 .fluid-width-video-wrapper {
   margin-bottom: 40px; }
 
@@ -175,18 +179,33 @@ table {
   font-weight: 700;
   padding: 10px 12px;
   text-transform: uppercase; }
-  .button:hover {
-    background: #f03838; }
+.button:hover {
+  background: #f03838; 
+}
 
 .button-square {
   background: #f03838;
   color: #FFF;
   float: left;
-  font-size: 17px;
-  margin: 0 0 0 10px;
-  padding: 3px 8px 4px; }
-  .button-square:hover {
-    background: #303030; }
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.button-square:hover {
+  background: #303030; 
+}
+.button-square svg {
+  position: absolute;
+}
+.site-header svg {
+  top: 7px;
+  left: 7px;
+}
+.footer svg {
+  top: 0;
+  left: 0;
+}
 
 /* ============================================================ */
 /* Site Header */
@@ -207,13 +226,15 @@ table {
   font-weight: 600;
   margin: 0;
   text-transform: uppercase; }
-  .site-title a {
-    float: left;
-    background: #f03838;
-    color: #FEFEFE;
-    padding: 5px 10px 6px; }
-    .site-title a:hover {
-      background: #303030; }
+.site-title a {
+  float: left;
+  background: #f03838;
+  color: #FEFEFE;
+  padding: 5px 10px 6px; 
+}
+.site-title a:hover {
+  background: #303030; 
+}
 
 .site-nav {
   list-style: none;
