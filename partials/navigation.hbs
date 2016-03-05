@@ -1,0 +1,8 @@
+<ul class="site-nav">
+  <li class="site-nav-item"><a class="js-ajax-link" href="{{@blog.url}}">Latest</a></li>
+  <li class="site-nav-item"><a class="js-ajax-link js-show-index" href="{{@blog.url}}">All</a></li>
+  {{#foreach navigation}}
+    <li class="site-nav-item {{slug}}"><a class="js-ajax-link" href="{{url absolute="true"}}">{{label}}</a></li>
+  {{/foreach}}
+</ul>
+
