@@ -73,9 +73,6 @@
         </div>
     </footer>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{! GRIN EDIT: dont load the ghost_foot, we'll load jquery asynchronously }}
-    {{! {{ghost_foot } } }}
 
     <script src="{{asset "js/jQl.min.js"}}"></script>
     <script>
@@ -95,5 +92,7 @@
       ga('create', 'UA-48451015-1', 'grin.io');
       ga('send', 'pageview');
     </script>
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ ghost_foot }}
 </body>
 </html>
