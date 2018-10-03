@@ -1,4 +1,5 @@
 {
-	"name": "Ghostwriter",
-	"version": "1.6.0"
+	"name": "ghostwriter",
+	"version": "1.6.0",
+	"author": {"email":"ghost@grin.io"}
 }
